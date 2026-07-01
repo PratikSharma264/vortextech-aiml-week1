@@ -63,6 +63,7 @@ VORTEXTECH-AIML-WEEK1/
 │
 ├── README.md
 ├── requirements.txt
+├── .gitignore
 ├── .gitattributes
 └── venv/ (local virtual environment, not uploaded to GitHub)
 ```
