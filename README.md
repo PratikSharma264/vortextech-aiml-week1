@@ -2,118 +2,241 @@
 
 ## Data Cleaning and Exploratory Data Analysis (EDA)
 
-This repository contains my Week 1 assignment for the **Vortex Tech AI & ML Internship Program 2026**. The objective of this task is to begin working with a real-world dataset using Python and Pandas by setting up the development environment, loading the dataset, and performing an initial inspection.
+This repository contains my **Week 1 assignment** for the **Vortex Tech AI & ML Internship Program**. The objective of this project is to perform data cleaning and exploratory data analysis (EDA) on the Titanic dataset using Python and its data analysis libraries.
 
 ---
 
-## 📌 Objective
+## 📌 Project Objective
 
-The primary objective of this stage is to:
+The objectives of this project are to:
 
-* Set up the Python environment.
-* Install the required libraries.
-* Download a public dataset.
-* Load the dataset into a Jupyter Notebook.
-* Perform an initial inspection of the dataset.
-
----
-
-## 🛠 Prerequisites
-
-Before starting, install **Python 3.x** from the official Python website.
-
-Required Python libraries:
-
-```bash
-pip install pandas matplotlib seaborn jupyter
-```
+- Load and inspect a real-world dataset.
+- Identify and handle missing values.
+- Check for duplicate records.
+- Verify data types.
+- Generate summary statistics.
+- Create meaningful visualizations.
+- Document the complete data analysis process.
 
 ---
 
 ## 📂 Dataset
 
-For this project, the **Titanic Dataset** from Kaggle is used.
+**Dataset:** Titanic Dataset
 
-**Source:** https://www.kaggle.com/datasets/yasserh/titanic-dataset
+- **Source:** Kaggle
+- **Format:** CSV
+- **Rows:** 891
+- **Columns:** 12
 
-Download the dataset in **CSV** format and place it inside the project's `data` folder.
-
----
-
-## ▶️ Running the Project
-
-### 1. Launch Jupyter Notebook
-
-Open a terminal in the project directory and run:
-
-```bash
-jupyter notebook
-```
-
-Create a new Jupyter Notebook (`.ipynb`) file.
+The dataset contains passenger information such as passenger class, age, gender, ticket fare, embarkation port, and survival status.
 
 ---
 
-### 2. Load the Dataset
+## 🛠 Technologies Used
 
-Import the Pandas library and read the CSV dataset.
-
-```python
-import pandas as pd
-
-df = pd.read_csv("../data/Titanic-Dataset.csv")
-```
-
-If the notebook is in the same directory as the dataset, use:
-
-```python
-df = pd.read_csv("Titanic-Dataset.csv")
-```
-
----
-
-### 3. Initial Data Inspection
-
-Display the first few rows of the dataset:
-
-```python
-df.head()
-```
-
-Display dataset information:
-
-```python
-df.info()
-```
-
-These commands provide an overview of the dataset, including the column names, data types, number of records, and any missing values.
+- Python 3
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-vortextech-aiml-week1/
+VORTEXTECH-AIML-WEEK1/
 │
 ├── data/
 │   └── Titanic-Dataset.csv
-│── images/
+│
+├── images/
+│   ├── age_distribution.png
+│   ├── fare_distribution.png
+│   ├── sex_distribution.png
+│   └── survival_distribution.png
+│
 ├── notebook/
 │   └── Week1_DataCleaning_EDA.ipynb
 │
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+├── .gitattributes
+└── venv/ (local virtual environment, not uploaded to GitHub)
 ```
 
 ---
 
-## 🚀 Current Progress
+## 📋 Tasks Completed
 
-* ✅ Python environment configured
-* ✅ Required libraries installed
-* ✅ Dataset downloaded
-* ✅ Jupyter Notebook created
-* ✅ Dataset successfully loaded
-* ✅ Initial dataset inspection completed
+### ✅ 1. Imported Required Libraries
 
-This README covers the initial setup and data loading phase of the Week 1 assignment. Subsequent sections, including data cleaning, exploratory data analysis, summary statistics, and visualizations, will be added as the project progresses.
+Imported the following libraries:
+
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+---
+
+### ✅ 2. Loaded the Dataset
+
+- Loaded the Titanic dataset using Pandas.
+- Displayed the first few rows.
+- Inspected dataset information.
+- Checked dataset dimensions and column names.
+
+---
+
+### ✅ 3. Data Cleaning
+
+Performed data cleaning by:
+
+- Checking for missing values
+- Handling missing values where necessary
+- Checking for duplicate records
+- Removing duplicate rows (if present)
+- Verifying data types
+
+---
+
+### ✅ 4. Exploratory Data Analysis (EDA)
+
+Generated summary statistics using:
+
+- `describe()`
+- `value_counts()`
+
+Created visualizations including:
+
+- Age Distribution Histogram
+- Survival Distribution Bar Chart
+- Gender Distribution Bar Chart
+- Fare Distribution by Passenger Class
+
+---
+
+## 📊 Sample Visualizations
+
+### Age Distribution
+
+![Age Distribution](images/age_distribution.png)
+
+---
+
+### Survival Distribution
+
+![Survival Distribution](images/survival_distribution.png)
+
+---
+
+### Gender Distribution
+
+![Gender Distribution](images/sex_distribution.png)
+
+---
+
+### Fare Distribution by Passenger Class
+
+![Fare Distribution](images/fare_distribution.png)
+
+---
+
+## 📈 Key Observations
+
+- The dataset was successfully loaded and explored.
+- Missing values and duplicate records were identified and handled where necessary.
+- Summary statistics provided insights into passenger demographics.
+- Most passengers belonged to the younger and middle-age groups.
+- The number of passengers who did not survive exceeded the number who survived.
+- Male passengers outnumbered female passengers.
+- First-class passengers generally paid higher fares than passengers in lower classes.
+
+---
+
+## ▶️ How to Run
+
+### Clone the repository
+
+```bash
+git clone https://github.com/<your-github-username>/VORTEXTECH-AIML-WEEK1.git
+```
+
+### Navigate to the project folder
+
+```bash
+cd VORTEXTECH-AIML-WEEK1
+```
+
+### Create a virtual environment (optional)
+
+```bash
+python -m venv venv
+```
+
+Activate it.
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### Install the required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```
+notebook/Week1_DataCleaning_EDA.ipynb
+```
+
+Run all cells to reproduce the analysis.
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I learned how to:
+
+- Import and inspect datasets using Pandas.
+- Clean and preprocess real-world data.
+- Handle missing values and duplicate records.
+- Verify data types.
+- Generate summary statistics.
+- Create informative visualizations.
+- Document a data analysis workflow using Jupyter Notebook.
+
+---
+
+## 👤 Author
+
+**Pratik Sharma**
+
+Bachelor of Computer Applications (BCA)
+
+Vortex Tech AI & ML Internship
+
+2026
