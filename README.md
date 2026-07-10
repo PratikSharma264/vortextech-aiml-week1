@@ -236,7 +236,7 @@ Through this project, I learned how to:
 
 **Pratik Sharma**
 
-Bachelor of Computer Applications (BCA)
+Bachelor of Computer Engineering (BCE)
 
 Vortex Tech AI & ML Internship
 
